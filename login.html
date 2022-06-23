@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+      
+      function Metoda1(){
+
+
+    let email = document.querySelector('#User').value;
+    console.log(email);
+
+    let password = document.querySelector('#Pass').value
+    console.log(password);
+
+    if(email.length < 19){
+        alert('Emaili duhet te jet me 19 karaktere');
+    }
+
+    else if (password.length < 8) {
+        alert('Password duhet te jet me 8 karaktere');
+    }
+
+    }
+    </script>
+</head>
+<body>
+  <header>
+   
+    <nav class="navbar">
+        <a href="Index.html" class="home">Home</a>
+        <a href="product.html" class="home">Product</a>
+        <a href="about-us.html" class="home">About us</a>
+        <a href="login.html" class="home">Log in</a>
+    </nav>
+
+</header>
+ 
+  
+    <div class=card-wrap>
+  
+      <div class="left " >
+        <h1>JUST DO IT.</h1>
+        <img class="nike" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/2000px-Logo_NIKE.svg.png" height= 50px width="100px">
+        <a class="acc-button" href="#"> Create An Account</a>
+  
+  
+  
+      </div>
+  
+  
+      <div class=right>
+        <h2>Sign In</h2>
+  
+        <div class="info-wrap">
+          <form action="action_page.php">
+            <label  for="User">Username</label>
+            <input type="text" id="User" name="Username">
+  
+            <label for="Pass">Password</label>
+            <input type="password" id="Pass" name="Password">
+  
+  <div class="submit-wrap">
+    <a href=#  onclick="Metoda1()" class="submit"  type="submit" value="sign In" >Sign In</a>
+    <a class="FP" href=#>Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+  
+  
+      </div>
+  
+  
+    </div>
+  
+  
+  </body>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
